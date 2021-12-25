@@ -593,16 +593,6 @@ footer .logo {
   fill: #ffffff;
 }
 
-/* .footer-flex { */
-/* display: inline-flex; */
-/* } */
-/* .footer-flex-list { */
-/* display: flex; */
-/* } */
-/* .flex-footer { */
-/* display: flex; */
-/* justify-content: center; */
-/* } */
 .home a:hover,
 .home a:focus,
 .footer-contacts a:hover,
@@ -618,6 +608,12 @@ footer .logo {
 
 .footer-list:not(last-child) {
   margin-bottom: 10px;
+}
+
+.subscript-file {
+  /* margin-left: 93px; */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Portfolio */
