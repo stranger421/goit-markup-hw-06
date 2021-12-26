@@ -665,15 +665,8 @@ footer .logo {
 }
 
 .icon-send {
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 13px;
-  right: 28px;
+  margin-left: 10px;
 }
-
-/* .subscript-input::placeholder { */
-/* } */
 
 /* Portfolio */
 .portfolio-content {
@@ -852,4 +845,68 @@ footer .logo {
   right: 9px;
   bottom: 10px;
   left: 10px;
+}
+
+/* Форма модалки */
+.form--modal {
+  width: 448px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.form--modal-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--main-color);
+}
+
+.form-name {
+  margin-right: auto;
+  margin-bottom: 4px;
+}
+
+.form--modal-box .form-name {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.form-input {
+  width: 100%;
+  margin: 0;
+  font: inherit;
+  padding: 12px 20px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  position: relative;
+}
+
+.form-input:focus + .form--icon {
+  fill: var(--active-color);
+}
+
+.form-input:focus {
+  border: 1px solid var(--active-color);
+  border-radius: 4px;
+}
+
+.form--icon {
+  position: absolute;
 }

@@ -379,8 +379,8 @@
                     <input type="email" name="subscript" id="subscript" class="subscript-input" placeholder="E-mail">
                 </div>
                 <button type="submit" class="subscript-button">Подписаться
-                    <svg class="icon-send">
-                        <use href="images/symbol-defs.svg#icon-send" width="24" height="24"></use>
+                    <svg class="icon-send" width="24" height="24">
+                        <use href="images/symbol-defs.svg#icon-send" ></use>
                     </svg>
                 </button>
             </form>
@@ -388,7 +388,6 @@
 
         </div>
     </footer>
-
 <!-- Модальное окно -->
 
     <div class="backdrop is-hidden" data-modal>
@@ -399,6 +398,20 @@
                     <use href="images/symbol-defs.svg#vector"></use>
                 </svg>
             </button>
+            <form class="form--modal" autocomplete="off">
+                <legend>Оставьте свои данные, мы вам перезвоним</legend>
+                <label class="form--modal-box">
+                    <span class="form-name">Имя</span>
+                    <input  type="text" class="form-input" name="user_name" id="user_name">
+                    <svg class="form--icon"  width="18" height="18">
+                        <use href="images/symbol-defs.svg#icon-person"></use>
+                    </svg>
+                </label>
+                <label for=""></label>
+                <label for=""></label>
+                <label for=""></label>
+                <label for=""></label>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
