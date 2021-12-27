@@ -401,16 +401,45 @@
             <form class="form--modal" autocomplete="off">
                 <legend>Оставьте свои данные, мы вам перезвоним</legend>
                 <label class="form--modal-box">
-                    <span class="form-name">Имя</span>
-                    <input  type="text" class="form-input" name="user_name" id="user_name">
-                    <svg class="form--icon"  width="18" height="18">
-                        <use href="images/symbol-defs.svg#icon-person"></use>
-                    </svg>
+                    <span class="modal-name">Имя</span>
+                    <span class="form-name">
+                        <input type="text" class="form-input" name="user_name">
+                        <svg class="form--icon" width="18" height="18">
+                            <use href="images/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                    </span>
                 </label>
-                <label for=""></label>
-                <label for=""></label>
-                <label for=""></label>
-                <label for=""></label>
+                <label class="form--modal-box">
+                    <span class="modal-name">Телефон</span>
+                    <span class="form-name">
+                        <input type="text" class="form-input" name="tel">
+                        <svg class="form--icon" width="18" height="18">
+                            <use href="images/symbol-defs.svg#icon-tel"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="form--modal-box">
+                    <span class="modal-name">Почта</span>
+                    <span class="form-name">
+                        <input type="text" class="form-input" name="mail">
+                        <svg class="form--icon" width="18" height="18">
+                            <use href="images/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="form--modal-box">
+                    <span class="modal-name">Комментарий</span>
+                    <textarea name="comment" id="comment" cols="60" placeholder="Введите текст" class="form-texrarea"></textarea>
+                    </span>
+                <label class="form-checkbox">
+                    <input class="checkbox" type="checkbox" name="policy">
+                    <svg class="form--icon" width="15" height="15">
+                        <use></use>
+                    </svg>
+                    <span class="label-checkbox">Соглашаюсь с рассылкой и принимаю
+                        <a href="#" class="contract">Условия договора</a>
+                    </span>
+                </label>
             </form>
         </div>
     </div>
