@@ -857,6 +857,7 @@ footer .logo {
 /* Форма модалки */
 .form--modal {
   width: 448px;
+  min-height: ;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -937,6 +938,13 @@ legend {
   /* transform: translateY(-50%); */
 }
 
+.form--icon-check {
+  position: absolute;
+  fill: #fff;
+  display: flex;
+  border-radius: 2px;
+}
+
 .form-texrarea {
   resize: none;
   padding: 12px 16px;
@@ -972,24 +980,20 @@ legend {
   overflow: hidden;
 }
 
-.policy-checkbox:checked + .policy-box::before {
+.policy-checkbox:checked ~ .form--icon-check {
   background-color: #2196f3;
-  background-image: url(../images/icon-check.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
-.policy-checkbox:focus + .policy-box::before {
-  border-color: #2196f3;
-  outline: 2px solid #2196f3;
+.policy-checkbox:checked ~ .policy-box::before {
+  border: none;
+  background-color: #2196f3;
 }
 
 .policy-box::before {
   display: block;
   content: '';
   width: 16px;
-  height: 16px;
+  height: 15px;
   border: 1px solid #212121;
   border-radius: 2px;
   margin-right: 10px;
