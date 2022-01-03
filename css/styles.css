@@ -852,12 +852,17 @@ footer .logo {
   right: 9px;
   bottom: 10px;
   left: 10px;
+  transition: fill 250ms var(--timing-function);
+}
+.close-modal:focus .close-modal-button,
+.close-modal:hover .close-modal-button {
+  fill: var(--active-color);
 }
 
 /* Форма модалки */
 .form--modal {
   width: 448px;
-  min-height: ;
+  /* min-height: ; */
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -877,6 +882,18 @@ legend {
 }
 
 .form--modal-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--sec-color);
+}
+
+.check--modal-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -911,6 +928,7 @@ legend {
 
 .form-input {
   width: 100%;
+  height: 40px;
   margin: 0;
   font: inherit;
   padding: 12px 20px;
@@ -943,6 +961,8 @@ legend {
   fill: #fff;
   display: flex;
   border-radius: 2px;
+  left: 12px;
+  top: 12px;
 }
 
 .form-texrarea {
@@ -967,6 +987,12 @@ legend {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
+  margin-left: 12px;
+  margin-top: 12px;
+}
+
+.policy-box-name {
+  margin-left: 25px;
 }
 
 .policy-checkbox {
@@ -982,14 +1008,16 @@ legend {
 
 .policy-checkbox:checked ~ .form--icon-check {
   background-color: #2196f3;
+  outline: none;
+  transition: background-color 250ms var(--timing-function);
 }
 
-.policy-checkbox:checked ~ .policy-box::before {
+.policy-checkbox:checked ~ .policy-box-check {
   border: none;
-  background-color: #2196f3;
 }
 
-.policy-box::before {
+.policy-box-check {
+  position: absolute;
   display: block;
   content: '';
   width: 16px;
@@ -997,6 +1025,8 @@ legend {
   border: 1px solid #212121;
   border-radius: 2px;
   margin-right: 10px;
+  top: 12px;
+  left: 12px;
 }
 
 .policy-box a {
