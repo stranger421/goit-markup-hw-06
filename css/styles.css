@@ -862,13 +862,14 @@ footer .logo {
 /* Форма модалки */
 .form--modal {
   width: 448px;
-  /* min-height: ; */
+  min-height: 581px;
   justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 legend {
@@ -897,7 +898,6 @@ legend {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
