@@ -957,12 +957,7 @@ legend {
 }
 
 .form--icon-check {
-  position: absolute;
   fill: #fff;
-  display: flex;
-  border-radius: 2px;
-  left: 12px;
-  top: 12px;
 }
 
 .form-texrarea {
@@ -1004,16 +999,7 @@ legend {
   padding: 0px;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.policy-checkbox:checked ~ .form--icon-check {
-  background-color: #2196f3;
-  outline: none;
-  transition: background-color 250ms var(--timing-function);
-}
-
-.policy-checkbox:checked ~ .policy-box-check {
-  border: none;
+  z-index: 100;
 }
 
 .policy-box-check {
@@ -1027,6 +1013,13 @@ legend {
   margin-right: 10px;
   top: 12px;
   left: 12px;
+  transition: background-color 250ms var(--timing-function);
+}
+
+.policy-checkbox:checked + .policy-box-check {
+  background-color: #2196f3;
+
+  border: none;
 }
 
 .policy-box a {
